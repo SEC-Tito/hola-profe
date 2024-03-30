@@ -1,0 +1,63 @@
+
+ion-col{ 
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+/* Cambiar el color de fondo de ion-button */
+ion-button {
+  --background: white;
+}
+.sala-r {
+  background-color: red;
+}
+
+.sala-g {
+  background-color: green;
+}
+
+.dormitorio1-r {
+  background-color: rgb(243, 10, 10);
+}
+
+.dormitorio1-g {
+  background-color: green;
+}
+
+.dormitorio2-r{
+  background-color: red;
+
+}
+.dormitorio2-g{
+
+  background-color: green;
+
+}
+.dormitorio3-r{
+  background-color: red;
+
+}
+.dormitorio3-g{
+  background-color: green;
+
+
+}
+.terrasa-r{
+  background-color: red;
+
+}
+.terrasa-g{
+  background-color: green;
+
+}
+.cocina-g{
+  background-color: green;
+
+
+}
+.cocina-r{
+  background-color: red;
+
+}

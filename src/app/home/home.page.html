@@ -1,0 +1,78 @@
+
+<ion-content [fullscreen]="true">
+
+  <div style="width: 100%; height: auto; text-align: center; display: flex; justify-content: center; align-items: center; background-color:black">
+</div>
+  <ion-grid>
+
+    <ion-row  style="height: 200px;">
+      <ion-col size="6">
+        <div [ngClass]="{'sala-r': !estadosala, 'sala-g': estadosala}"
+        style="border-radius: 30px;height: 100%;width: 100%;text-align: center;">
+        <h3>sala</h3>
+        <ion-button class="style" >   <ion-icon name="desktop-outline" style="color:black;font-size: 30px;"></ion-icon>
+        </ion-button>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div [ngClass]="{'cocina-r': !estadococina, 'cocina-g': estadococina }"
+        style="border-radius: 30px;height: 100%;width: 100%;text-align: center;">
+        <h3>Cocina</h3>
+        <ion-button   >   <ion-icon name="restaurant-outline" style="color:black;font-size: 30px;"></ion-icon>
+        </ion-button>
+        </div>
+      </ion-col>
+    
+    </ion-row>
+  
+    <ion-row  style="height: 200px;">
+      <ion-col size="6">
+  
+        <div [ngClass]="{'dormitorio1-r': !estadodormitorio1, 'dormitorio1-g': estadodormitorio1}"
+        style="border-radius: 30px;height: 100%;width: 100%;text-align: center;">
+<h3>dormitorio1</h3>
+<ion-button><ion-icon name="bed-outline" style="color:black;font-size: 30px;"></ion-icon></ion-button>
+
+      </div>
+      </ion-col>
+      <ion-col size="6">
+        
+        <div [ngClass]="{'dormitorio2-r': !estadodormitorio2, 'dormitorio2-g': estadodormitorio2}"
+        style="border-radius: 30px;height: 100%;width: 100%;text-align: center;">
+        <h3>dormitorio2</h3>
+
+        <ion-button>      <ion-icon name="desktop-outline" style="color:black;font-size: 30px;"></ion-icon>
+        </ion-button>
+        </div>
+      </ion-col>
+    
+    </ion-row>
+
+    
+    <ion-row  style="height: 200px;">
+      <ion-col size="6">
+  
+        <div [ngClass]="{'dormitorio3-r': !estadodormitorio3, 'dormitorio2-g': estadodormitorio3}"
+        style="border-radius: 30px;height: 100%;width: 100%;text-align: center;">
+      
+        <h3>dormitorio3</h3>
+        <ion-button>     <ion-icon name="desktop-outline" style="color:black;font-size: 30px;"></ion-icon>
+        </ion-button>
+            
+      </div>
+      </ion-col>
+      <ion-col size="6">
+        <div [ngClass]="{'terrasa-r': !estadoterrasa, 'terrasa-g': estadoterrasa}"
+        style="border-radius: 30px;height: 100%;width: 100%;text-align: center;">
+        <h3>terrasa</h3>
+        <ion-button>
+
+          <ion-icon name="moon-outline" style="color:black;font-size: 30px;"></ion-icon>
+
+        </ion-button>
+        </div>
+      </ion-col>
+    
+    </ion-row>
+  </ion-grid>
+</ion-content>
