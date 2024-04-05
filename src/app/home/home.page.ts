@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Database, object, ref } from '@angular/fire/database';
+import { set } from 'firebase/database';
 
 @Component({
   selector: 'app-home',
@@ -48,4 +49,47 @@ export class HomePage {
       this.estadoterrasa = attributes.snapshot.val();
     });
   }
+  cambiardormitorio1(nuevoEstado: boolean) {
+    const routedormitorio1 = ref(this.database, "casa/dormitorio1");
+    set(routedormitorio1, nuevoEstado); // Actualiza el valor en la base de datos
+    
+    // Cambia el color del botón
+    this.estadodormitorio1 = nuevoEstado;
+  }
+  cambiarCocina(nuevoEstado: boolean) {
+    const routecocina = ref(this.database, "casa/cocina");
+    set(routecocina, nuevoEstado); // Actualiza el valor en la base de datos
+    
+    // Cambia el color del botón
+    this.estadococina = nuevoEstado;
+  }
+  cambiardormitorio2(nuevoEstado: boolean) {
+    const routedormitorio2 = ref(this.database, "casa/dormitorio2");
+    set(routedormitorio2, nuevoEstado); // Actualiza el valor en la base de datos
+    
+    // Cambia el color del botón
+    this.estadodormitorio2 = nuevoEstado;
+  }
+  cambiardormitorio3(nuevoEstado: boolean) {
+    const routedormitorio3 = ref(this.database, "casa/dormitorio3");
+    set(routedormitorio3, nuevoEstado); // Actualiza el valor en la base de datos
+    
+    // Cambia el color del botón
+    this.estadodormitorio3= nuevoEstado;
+  }
+  cambiarsala(nuevoEstado: boolean) {
+    const routesala = ref(this.database, "casa/sala");
+    set(routesala, nuevoEstado); // Actualiza el valor en la base de datos
+    
+    // Cambia el color del botón
+    this.estadosala = nuevoEstado;
+  }
+  cambiarterrasa(nuevoEstado: boolean) {
+    const routeterrasa = ref(this.database, "casa/terrasa");
+    set(routeterrasa, nuevoEstado); // Actualiza el valor en la base de datos
+    
+    // Cambia el color del botón
+    this.estadoterrasa = nuevoEstado;
+  }
+  
 }
